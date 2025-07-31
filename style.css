@@ -1,0 +1,68 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+form {
+  max-width: 600px;
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-inline: auto;
+  margin-top: 45px;
+  position: relative;
+  label {
+    font-size: 18px;
+    color: rgb(74, 74, 167);
+    font-weight: 600;
+  }
+
+  input {
+    padding: 10px 15px;
+    outline: none;
+    border-radius: 10px;
+    ::placeholder {
+      font-size: 18px;
+      color: gray;
+    }
+  }
+
+  #submit {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: rgb(74, 74, 167);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .passContainer {
+    position: relative;
+
+    input {
+      width: 100%;
+    }
+
+    .passBtn {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    top: 6px;
+    z-index: 999;
+    cursor: pointer;
+  }
+  }
+}
